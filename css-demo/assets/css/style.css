@@ -20,6 +20,17 @@ html {
   white-space: nowrap;
   width: 1px;
 }
+/*----------- Global Styles -------- */
+.container{
+  width:80vw;
+  max-width:992px;
+  margin:40px auto;
+
+}
+
+img{
+  max-width:100px;
+}
 
 /*---------- Global Styles ----------*/
 body{
@@ -29,8 +40,127 @@ body{
 }
 
 header.primary{
-  background-color:#0789D7;
+  background-color:#ff00f2;
   color:#ffffff;
   text-align:center;
   text-shadow: 1px 1px #0000;
+
+  padding top:40px;
+  padding right:40px;
+  padding bottom:40x;
+  padding left:40px;
+
+  padding: 40px 40px 20px 40px;
+
+  padding: 20px 40px;
+  
+
+}
+
+header.primary a{
+  color: #ffffff;
+  text-decoration:none;
+}
+
+header.primary h1{
+font-size:2.4rem;
+margin:0;
+}
+
+header.primary p.subtitle{
+font-size:1.0rem;
+margin:10px 0 20px;
+letter-spacing:2px;
+}
+
+header.primary nav{
+}
+
+header.primary nav ul{
+padding:0;
+display:flex;
+flex-direction:row-reverse;
+justify-content: space-around;
+}
+
+header.primary nav ul li{
+list-style-type:none;
+margin-bottom:10px
+}
+
+header.primary nav ul li a{
+  display: block;
+  padding: 8px 20px;
+  color: #fff;
+  text-decoration: none;
+  background-color: hsl(0, 0%, 0%);
+  border: 2px solid whitesmoke;
+  border-radius: 20px;
+}
+
+header.primary nav ul li a:hover{
+  background-color: rgba(0,0,0,0.4)
+}
+
+#content h2{
+  color:#ff00f2;
+  border-bottom: 1px solid #ff00f2;
+}
+
+#content p{
+  line-height:1.9;
+}
+
+#blog {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#block-article {
+    border: 2px solid black;
+    box-shadow: 2px 41px 84px -30px rgba(0,0,0,1);
+    padding: 10px;
+    font-size: 7rem;
+    border: 2px solid black;
+}
+
+figure {
+    margin: 0;
+}
+
+#block-article time {
+    text-transform: uppercase;
+    font-size: 7rem;
+}
+#blog a{
+  color:#ff00f2
+}
+
+aside[aria-label="Sidebar"] {
+  background-color:bisque;
+  color:#ff00f2;
+  padding: 40px 0;
+}
+aside div.container{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+}
+aside .container a{
+  color:#ffffff
+
+}
+article.widget footer{
+  display:none;
+}
+
+/*--------- Media queierr ---------*/
+@media screen and (max-width:2000px) {
+  body {
+    display:flex;
+    flex-direction: column;
+    
+  }
 }
