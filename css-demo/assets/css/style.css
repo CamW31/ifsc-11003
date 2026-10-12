@@ -32,6 +32,24 @@ img{
   max-width:100px;
 }
 
+.img-right{
+float:right;
+border:1px: solid #cb0092cc;
+padding:5px;
+margin: 10px 0 10px 20px;
+}
+
+.img-left{
+float:left;
+border:1px: solid #cb0092cc;
+padding:5px;
+margin: 10px 20px 10px 0px;
+}
+
+.img-center{
+
+}
+
 /*---------- Global Styles ----------*/
 body{
   font-family: "Unbounded", sans-serif;
@@ -116,6 +134,10 @@ header.primary nav ul li a:hover{
     flex-direction: row;
     justify-content: space-between;
     gap: 20px;
+    border-top:4px double #cb0092cc;
+    border-bottom:4px double #cb0092cc;
+    margin: 20px 0;
+    padding: 35px 0;
 }
 
 #block-article {
@@ -138,6 +160,53 @@ figure {
   color:#ff00f2
 }
 
+#practice h2{
+  color:#ff00f2;
+  border-bottom: 1px solid #ff00f2;
+}
+
+#practice a:link, #practice a:visited{
+  color: #cb0092cc;
+}
+
+#practice h3{
+border-left: 5.5px solid #000000;
+padding: 7.5px;
+}
+
+table{
+width:10px;
+border: 1px solid #000000;
+border-collapse: collapse;
+}
+
+table caption{
+
+}
+
+tr{
+nth-child:
+}
+
+th{
+background-color:#ff00f2;
+color:#ffffff;
+padding:7.5px;
+}
+
+td{
+border: 1px solid #000000;
+padding:5px;
+}
+
+tr:hover{
+background-color: #b3a9a9;
+}
+
+
+
+
+
 aside[aria-label="Sidebar"] {
   background-color:bisque;
   color:#ff00f2;
@@ -154,6 +223,14 @@ aside .container a{
 }
 article.widget footer{
   display:none;
+}
+
+footer.primary{
+  background-color: #ff00f2;
+  padding: 2px;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 10px;
 }
 
 /*--------- Media queierr ---------*/
